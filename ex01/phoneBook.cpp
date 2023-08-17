@@ -17,7 +17,7 @@ void Phonebook::add()
     str = "";
     if (this->m_index > 7)
         std::cout << "Warning: overwriting info about " << this->m_contacts[this->m_index % 8].get_m_first_name() << std::endl;
-    while (!std::cin.eof() && str == "")
+    while ( str == "")
 	{
 		std::cout << "Enter a first name: ";
 		if (std::getline(std::cin, str) && str != "")
